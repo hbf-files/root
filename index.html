@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			body {
+				background: #202020;
+				color: #FFF;
+				font-weight: bold;
+				font-family: Arial;
+				text-align: center;
+				font-size: 14pt;
+			}
+			body > div {
+				background: #101010;
+				display: inline-block;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 4em;
+				padding: 30px;
+			}
+			p, h1, h3 {
+				padding-top: 0px;
+				padding-bottom: 0px;
+			}
+			p, h1, h3, .mainpic {
+				margin-top: 10px;
+				margin-bottom: 0px;
+			}
+			h1 {
+				margin-top: 0px;
+			}
+			h3 {
+				margin-top: 5px;
+				margin-bottom: 15px;
+			}
+			.not {
+				color: #FF0000;
+			}
+			.mainpic {
+				border: 4px solid yellow;
+				border-radius: 4px;
+			}
+			.folder {
+				display: inline-block;
+				padding-left: 5px;
+				padding-right: 5px;
+			}
+			/*.folder img {
+				vertical-align: middle;
+			}*/
+			.folderimg {
+				display: inline-block;
+				border: 1px solid #3C3C3C;
+				background-image: url(folder.png);
+				background-color: #777777;
+				background-repeat: no-repeat;
+				padding-left: 23px;
+				font-size: 10pt;
+				font-family: "Segoe UI";
+				font-weight: normal;
+				line-height: 20px;
+				vertical-align: middle;
+				height: 20px;
+				padding-right: 6px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class"main">
+			<h1>Qu'est-ce que la racine d'une Carte SD ?</h1>
+			<p>La racine signifie que vous n'êtes dans aucun dossier</p>
+			<img src="theroot.png" class="mainpic" />
+			<h3 style="color: yellow;">Ceci est la racine de votre Carte SD.</h2>
+			<p>
+				<div class="folder">
+					Ce n'est <span class="not">pas</span> ici:
+					<span class="folderimg">Nintendo 3DS</span>
+				</div>
+				<div class="folder">
+					Ce n'est<span class="not">pas</span> là:
+					<span class="folderimg">private</span>
+				</div>
+			</p>
+			<p>
+				<div class="folder">
+					<span class="not">Pas</span> ici:
+					<span class="folderimg">title</span>
+				</div>
+				<div class="folder">
+					<span class="not">Pas</span> ici:
+					<span class="folderimg">hiya</span>
+				</div>
+			<p>
+				<div class="folder">
+					<span class="not">Pas</span> ici:
+					<span class="folderimg">_nds</span>
+				</div>
+				<div class="folder">
+					<span class="not">Pas</span> ici:
+					<span class="folderimg">3ds</span>
+				</div>
+				<div class="folder">
+					Et <span class="not">pas</span> ici:
+					<span class="folderimg">root</span>
+				</div>
+				<br>
+				<small style="text-align: right; display:block; font-size: 0.5em;">(ce dossier ne devrait meme pas exister !)</small>
+			</p>
+		</div>
+	</body>
+</html>
